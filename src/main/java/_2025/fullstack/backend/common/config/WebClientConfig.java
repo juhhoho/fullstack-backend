@@ -16,7 +16,7 @@ public class WebClientConfig {
     @Bean
     public WebClient webClient() {
         return WebClient.builder()
-                .baseUrl("http://54.180.39.145:5000/compare_images")
+                .baseUrl("http://3.38.108.108:5000/compare_images")
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .clientConnector(new ReactorClientHttpConnector(
                         HttpClient.create()
